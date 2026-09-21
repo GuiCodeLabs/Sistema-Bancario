@@ -12,8 +12,12 @@ repositories {
 
 kotlin {
     jvmToolchain(17)
+    jvmToolchain(8)
 }
 
 application {
     mainClass.set("br.com.bytebank.MainKt")
+}
+dependencies {
+    implementation(kotlin("stdlib-jdk8"))
 }
